@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@font-face{
+    font-family: Brickson;
+    src: url('./Fonts/BricksonFreeTrial-jEYAG.otf')
+}
+@font-face{
+    font-family: Zing;
+    src: url('./Fonts/ZingRustDemo-Base.otf')
+}
 
 body{
-    background-color: rgb(223, 223, 223);
+    background-color: #E6E1D8;
+    font-family: 'Nunito', sans-serif;
 }
 
 #logo-img{
     width: 100px;
+    transform: translateY(-12px);
 }
 
 .header{
@@ -14,11 +24,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #423A38;
 }
 
 .menu{
-    font-family: 'Nunito', sans-serif;
     display: flex;
     list-style: none;
     color: white;
@@ -26,46 +35,65 @@ body{
 }
 
 .menu li:hover{
-    color: rgb(223, 223, 140);
+    color: #F6B332;
     transition: 0.2s;
-
 }
 
 .content-box{
     font-family: 'Nunito', sans-serif;
     font-size: 10px;
-    color: rgb(70, 70, 70);
     width: 200px;
     height: 200px;
-    background: rgb(249,255,0);
-    background: linear-gradient(45deg, rgba(249,255,0,1) 0%, rgba(241,224,31,1) 41%, rgba(241,224,31,1) 53%, rgba(249,255,0,1) 100%);    border-radius: 10%;
+    background: #F6B332;
+    border-radius: 1.5rem;
     text-align: center;
+}
+
+.box-shadow{
     -webkit-box-shadow: 10px 10px 25px -6px rgba(0,0,0,0.19);
     -moz-box-shadow: 10px 10px 25px -6px rgba(0,0,0,0.19);
     box-shadow: 10px 10px 25px -6px rgba(0,0,0,0.19);
 }
 
-.sobre-nos{
-    
-
+.clay-background{
+    background-color: rgb(223, 223, 223);
 }
 
-#texto-sobre-nos{
-    width: 500px;
-    background-color: white;
-
+.about-container{
+    position: relative;
 }
 
-#barber-imagem{
+.about-text{
     position: absolute;
+    display: flex;
+    width: 500px;
+    top: 6rem;
+    right: 6rem;
 }
 
+#about-us{
+    color: white;
+    margin: 0;
+    font-family: Zing;
+    font-size: 80px;
+    line-height: 5rem;
+    background-color: #F6B332;
+}
 
+.brown-color{
+    color:#423A38;
+}
 
+.about-text p{
+    background-color: white;
+    padding: 2rem;
+    margin:0;
+}
 
-
-.contents{
-    margin: 100px;
+.qualities-box{
+    margin: 5rem;
+    padding-top:10rem;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: space-around;
 }

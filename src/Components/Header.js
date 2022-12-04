@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './Assets/barber-shop-seuze.jpg'
+import Logo from '../Assets/logo2.png'
 import Menu from './Menu'
 
 
